@@ -1,0 +1,14 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "deploy": "npx hardhat ignition deploy ignition/modules/Onchainriddle.ts --network localhost",
+    "deploy-sepolia": "npx hardhat ignition deploy ignition/modules/Onchainriddle.ts --network sepolia --deployment-id sepolia-deployment",
+    "test": "npx hardhat test"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-viem": "^3.0.0",
+    "hardhat": "^2.24.1"
+  },
+  "dependencies": {
+  }
+}
