@@ -11,7 +11,7 @@ import {
 
 /**
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const onchainRiddleAbi = [
   { type: 'constructor', inputs: [], stateMutability: 'nonpayable' },
@@ -106,16 +106,16 @@ export const onchainRiddleAbi = [
 
 /**
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const onchainRiddleAddress = {
   31337: '0x5FbDB2315678afecb367f032d93F642f64180aa3',
-  11155111: '0x5FbDB2315678afecb367f032d93F642f64180aa3',
+  11155111: '0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe',
 } as const
 
 /**
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const onchainRiddleConfig = {
   address: onchainRiddleAddress,
@@ -130,7 +130,7 @@ export const onchainRiddleConfig = {
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link onchainRiddleAbi}__
  *
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const useReadOnchainRiddle = /*#__PURE__*/ createUseReadContract({
   abi: onchainRiddleAbi,
@@ -141,7 +141,7 @@ export const useReadOnchainRiddle = /*#__PURE__*/ createUseReadContract({
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link onchainRiddleAbi}__ and `functionName` set to `"bot"`
  *
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const useReadOnchainRiddleBot = /*#__PURE__*/ createUseReadContract({
   abi: onchainRiddleAbi,
@@ -153,7 +153,7 @@ export const useReadOnchainRiddleBot = /*#__PURE__*/ createUseReadContract({
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link onchainRiddleAbi}__ and `functionName` set to `"isActive"`
  *
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const useReadOnchainRiddleIsActive = /*#__PURE__*/ createUseReadContract(
   {
@@ -167,7 +167,7 @@ export const useReadOnchainRiddleIsActive = /*#__PURE__*/ createUseReadContract(
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link onchainRiddleAbi}__ and `functionName` set to `"riddle"`
  *
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const useReadOnchainRiddleRiddle = /*#__PURE__*/ createUseReadContract({
   abi: onchainRiddleAbi,
@@ -179,7 +179,7 @@ export const useReadOnchainRiddleRiddle = /*#__PURE__*/ createUseReadContract({
  * Wraps __{@link useReadContract}__ with `abi` set to __{@link onchainRiddleAbi}__ and `functionName` set to `"winner"`
  *
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const useReadOnchainRiddleWinner = /*#__PURE__*/ createUseReadContract({
   abi: onchainRiddleAbi,
@@ -191,7 +191,7 @@ export const useReadOnchainRiddleWinner = /*#__PURE__*/ createUseReadContract({
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link onchainRiddleAbi}__
  *
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const useWriteOnchainRiddle = /*#__PURE__*/ createUseWriteContract({
   abi: onchainRiddleAbi,
@@ -202,7 +202,7 @@ export const useWriteOnchainRiddle = /*#__PURE__*/ createUseWriteContract({
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link onchainRiddleAbi}__ and `functionName` set to `"setRiddle"`
  *
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const useWriteOnchainRiddleSetRiddle =
   /*#__PURE__*/ createUseWriteContract({
@@ -215,7 +215,7 @@ export const useWriteOnchainRiddleSetRiddle =
  * Wraps __{@link useWriteContract}__ with `abi` set to __{@link onchainRiddleAbi}__ and `functionName` set to `"submitAnswer"`
  *
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const useWriteOnchainRiddleSubmitAnswer =
   /*#__PURE__*/ createUseWriteContract({
@@ -228,7 +228,7 @@ export const useWriteOnchainRiddleSubmitAnswer =
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link onchainRiddleAbi}__
  *
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const useSimulateOnchainRiddle = /*#__PURE__*/ createUseSimulateContract(
   { abi: onchainRiddleAbi, address: onchainRiddleAddress },
@@ -238,7 +238,7 @@ export const useSimulateOnchainRiddle = /*#__PURE__*/ createUseSimulateContract(
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link onchainRiddleAbi}__ and `functionName` set to `"setRiddle"`
  *
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const useSimulateOnchainRiddleSetRiddle =
   /*#__PURE__*/ createUseSimulateContract({
@@ -251,7 +251,7 @@ export const useSimulateOnchainRiddleSetRiddle =
  * Wraps __{@link useSimulateContract}__ with `abi` set to __{@link onchainRiddleAbi}__ and `functionName` set to `"submitAnswer"`
  *
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const useSimulateOnchainRiddleSubmitAnswer =
   /*#__PURE__*/ createUseSimulateContract({
@@ -264,7 +264,7 @@ export const useSimulateOnchainRiddleSubmitAnswer =
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link onchainRiddleAbi}__
  *
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const useWatchOnchainRiddleEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -276,7 +276,7 @@ export const useWatchOnchainRiddleEvent =
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link onchainRiddleAbi}__ and `eventName` set to `"AnswerAttempt"`
  *
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const useWatchOnchainRiddleAnswerAttemptEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -289,7 +289,7 @@ export const useWatchOnchainRiddleAnswerAttemptEvent =
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link onchainRiddleAbi}__ and `eventName` set to `"RiddleSet"`
  *
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const useWatchOnchainRiddleRiddleSetEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
@@ -302,7 +302,7 @@ export const useWatchOnchainRiddleRiddleSetEvent =
  * Wraps __{@link useWatchContractEvent}__ with `abi` set to __{@link onchainRiddleAbi}__ and `eventName` set to `"Winner"`
  *
  * -
- * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x5FbDB2315678afecb367f032d93F642f64180aa3)
+ * - [__View Contract on Sepolia Etherscan__](https://sepolia.etherscan.io/address/0x06BC0F3cF252735E8C0AcD7A94577417790A50Fe)
  */
 export const useWatchOnchainRiddleWinnerEvent =
   /*#__PURE__*/ createUseWatchContractEvent({
