@@ -2,7 +2,7 @@ import { useReadOnchainRiddle, useWriteOnchainRiddleSubmitAnswer, useReadOnchain
 import { useState } from "react";
 import toast from "react-hot-toast";
 import { Address, keccak256, toBytes, zeroAddress } from "viem";
-import { useWaitForTransactionReceipt } from "wagmi";
+import { useWaitForTransactionReceipt, useChainId } from "wagmi";
 
 type RiddleFormType = {
     isConnected: boolean;
@@ -11,7 +11,7 @@ type RiddleFormType = {
 
 const RiddleForm = ({isConnected, address}: RiddleFormType) => {
     const [attempts, setAttempts] = useState<string[]>([]);
-
+    const chainId = useChainId();
     const { isLoading: isRiddleWinnerLoading, data: riddleWinner, refetch: refetchWinner } = useReadOnchainRiddleWinner();
     const { isLoading, data: riddle, refetch: refetchRiddle } = useReadOnchainRiddle(
         {
@@ -35,7 +35,7 @@ const RiddleForm = ({isConnected, address}: RiddleFormType) => {
     });
 
     useWatchOnchainRiddleAnswerAttemptEvent({
-        fromBlock: BigInt(0),
+        fromBlock: chainId === 11155111 ? BigInt(8433836) : BigInt(0),
         args: {
             riddleHash: keccak256(toBytes(riddle!))
         },
