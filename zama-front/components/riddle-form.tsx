@@ -86,8 +86,6 @@ const RiddleForm = ({isConnected, address}: RiddleFormType) => {
         });
 
     }
-    console.log(riddleWinner)
-    console.log(isRiddleWinnerLoading)
     if (!isRiddleWinnerLoading && riddleWinner !== zeroAddress) {
         return (
             <div className='flex flex-col h-full items-center justify-center gap-8'>
