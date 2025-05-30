@@ -86,15 +86,25 @@ const RiddleForm = ({isConnected, address}: RiddleFormType) => {
         });
 
     }
-    if (!isRiddleWinnerLoading && riddleWinner !== zeroAddress) {
+
+
+    if(isLoading) {
         return (
             <div className='flex flex-col h-full items-center justify-center gap-8'>
-                <p>Riddle already solved by {riddleWinner == address ? "you" : address} !</p>
-                <p>Let&apos;s wait for another riddle...</p>
+                <h1 className="text-center text-5xl font-bold max-w-5xl leading-tight">Loading...</h1>
             </div>
         )
     }
 
+    if (!isRiddleWinnerLoading && riddleWinner !== zeroAddress) {
+        return (
+            <div className='flex flex-col h-full items-center justify-center gap-8'>
+                <p>Riddle already solved by {riddleWinner == address ? "you" : riddleWinner} !</p>
+                <p>Let&apos;s wait for another riddle...</p>
+            </div>
+        )
+    }
+  
     return (
         <div className='flex flex-col h-full items-center md:justify-center gap-24 md:gap-8 pt-24 md:pt-0'>
             {isLoading ? <h1 className="text-center text-5xl font-bold max-w-5xl leading-tight">Loading...</h1> : <h1 className='text-center text-lg md:text-5xl font-bold max-w-5xl leading-tight'>
