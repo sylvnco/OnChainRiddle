@@ -5,12 +5,13 @@ import { hardhat, sepolia } from "viem/chains";
 
 export async function GET() {
     try {
-        if(!process.env.NETWORK && !process.env.PRIVATE_KEY) {
+        if(!process.env.NETWORK && !process.env.PRIVATE_KEY && !process.env.ALCHEMY_RPC_URL) {
             throw new Error("Missing environment variables !");
         }
         const network = process.env.NETWORK as string;
         const botPrivateKey = process.env.PRIVATE_KEY as Hex;
-        const chainId = network === "sepolia" ? hardhat.id : sepolia.id
+        const chainId = network === "sepolia" ? sepolia.id : hardhat.id
+
         const riddles = [
             {
                 "riddle": "What has roots as nobody sees, Is taller than trees, Up, up it goes, And yet never grows?",
@@ -37,8 +38,8 @@ export async function GET() {
         const account = privateKeyToAccount(botPrivateKey);
 
         const client = createWalletClient({
-            chain: hardhat,
-            transport: http(),
+            chain: network === "sepolia" ? sepolia : hardhat,
+            transport: network === "sepolia" ? http(process.env.ALCHEMY_RPC_URL) : http(),
             account
         }).extend(publicActions);
 
@@ -60,7 +61,7 @@ export async function GET() {
             abi: onchainRiddleAbi,
             functionName: 'setRiddle',
             args: [randomRiddle.riddle, keccak256(toBytes(randomRiddle.answer))],
-            address: onchainRiddleAddress[hardhat.id]
+            address: onchainRiddleAddress[chainId]
         });
 
         const res = await client.writeContract(request);
